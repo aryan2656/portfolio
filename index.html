@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Portfolio
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/28bb7dee34.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <nav class="navbar">
+                <h2><span>A</span>ryan.</h2>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Service</a></li> -->
+                    <li><a href="#portfolio">Work</a></li>
+                    <!-- <li><a href="#contact">Contact</a></li> -->
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Aryan</span> Italiya <br>from India.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <!-- <img src="images/user.png"> -->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p></p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <!-- <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>App Development</li> -->
+                            <div>
+                                <img src="./images/html.png" class="skills-logo">
+                                <img src="./images/css3.png" class="skills-logo">
+                                <img src="./images/js.png" class="skills-logo">
+                                <img src="./images/react.png" class="skills-logo">
+                                <img src="./images/git.png" class="skills-logo">
+                            </div>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>2021-Current</span><br>UI/UX Design Training of ET Institute</li>
+                            <li><span>2019-2021 </span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2016-2017</span><br>Internship at ekart eCommerce</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>Graduation(2020-2024)</span><br>Computer Science and Engineering,<br>Gujarat
+                                Technological University</li>
+                            <li><span>Higher Secondary</span><br>Shree Swaminarayan Gurukul,Surat</li>
+                            <!-- <li><span>App Development</span><br>App Development</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services -->
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque consectetur nisi sapiente
+                        molestias mollitia quidem ipsa, provident error vitae est ratione enim vel eum labore, saepe
+                        expedita animi laudantium aliquam?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque consectetur nisi sapiente
+                        molestias mollitia quidem ipsa, provident error vitae est ratione enim vel eum labore, saepe
+                        expedita animi laudantium aliquam?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque consectetur nisi sapiente
+                        molestias mollitia quidem ipsa, provident error vitae est ratione enim vel eum labore, saepe
+                        expedita animi laudantium aliquam?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Movie Search Website</h3>
+                        <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit repellendus, .</p> -->
+                        <a href="https://movie-search-webapp-aryan.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Tic-tac-toe Game</h3>
+                        <!-- <p>Lorem ipsum dolor, sit amet consectetur </p> -->
+                        <a href="https://tic-tac-toe-aryan.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
